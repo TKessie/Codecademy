@@ -1,0 +1,28 @@
+weight = 41.5
+
+#Ground Shipping
+if weight <=2:
+  gcost = weight * 1.5 + 20
+elif weight > 2 and weight <= 6:
+  gcost = weight * 3 + 20
+elif weight > 6 and weight <= 10:
+  gcost = weight * 4.00 + 20
+else:
+  gcost = weight * 4.75 + 20
+print ("Ground Shipping - $", gcost)
+premium_flat_charge = 125
+
+print ("Ground Shipping Premium $", premium_flat_charge)
+
+# Drone Shipping
+
+if weight <= 2:
+  dcost = weight * 4.50
+elif weight >2 and weight <= 6:
+  dcost = weight * 9.00
+elif weight >6 and weight <=10:
+  dcost = weight * 12
+else:
+  dcost = weight * 14.25
+
+print("Drone Shipping - $", dcost)
